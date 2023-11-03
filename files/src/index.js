@@ -1,9 +1,9 @@
 import "./styles.css";
 import rootRender from "./rootRender";
+import put from "put-selector";
 
 const helloWorld = () => {
-  const helloWorld = document.createElement("p");
-  helloWorld.textContent = "Hello World!";
+  const helloWorld = put("p", "Hello World!");
   return helloWorld;
 };
 
